@@ -18,6 +18,7 @@ function App() {
       <Slider 
         start={50}
         max={100}
+        formatFn={number => number.toFixed(0)}
         onChange={value => console.log(value)}
       />
     </AppContainer>
